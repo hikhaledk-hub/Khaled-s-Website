@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>خالد جمال العيسائي | Web Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Cairo,sans-serif;scroll-behavior:smooth}
+body{background:#08111f;color:#fff;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(120px);z-index:-1}
+body:before{width:420px;height:420px;background:#2563eb;top:-120px;left:-120px}
+body:after{width:420px;height:420px;background:#7c3aed;bottom:-120px;right:-120px}
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:18px 8%;background:#0b1324aa;backdrop-filter:blur(14px)}
+nav a{color:#fff;text-decoration:none;margin:0 12px}
+.hero{height:100vh;display:grid;place-items:center;text-align:center;padding:0 8%;
+background:linear-gradient(-45deg,#08111f,#11213d,#1d4ed8,#7c3aed);background-size:400% 400%;animation:bg 12s ease infinite}
+@keyframes bg{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+h1{font-size:64px}.accent{color:#38bdf8}
+p{max-width:700px;margin:20px auto;color:#d6d6d6;line-height:1.9}
+.btns a{display:inline-block;margin:8px;padding:15px 28px;border-radius:40px;text-decoration:none;color:#fff;transition:.3s}
+.w{background:#25D366}.c{background:#2563eb}.t{background:#229ED9}
+.btns a:hover{transform:translateY(-5px);box-shadow:0 0 20px #38bdf8}
+section{padding:90px 8%}
+.title{text-align:center;font-size:42px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{background:#ffffff10;border:1px solid #ffffff22;border-radius:20px;padding:24px;transition:.35s;backdrop-filter:blur(12px)}
+.card:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 0 30px #2563eb55}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.stat{text-align:center;background:#ffffff10;padding:25px;border-radius:18px}
+.num{font-size:48px;color:#38bdf8;font-weight:800}
+footer{text-align:center;padding:30px;color:#bbb}
+img{width:220px;background:#fff;padding:10px;border-radius:18px}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+a:hover{
+    color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+p a{
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+<header><b>خالد.</b><nav><a href="#s">الخدمات</a><a href="#p">الأعمال</a><a href="#c">تواصل</a></nav></header>
+<section class="hero">
+<div>
+<img src="gff.png" alt="Logo" style="width:190px;background:transparent;padding:20;border-radius:20;margin-bottom:60px;">
+<h1>أنا <span class="accent">خالد جمال العيسائي</span></h1>
+<h2 id="type"></h2>
+<p>مصمم ومطور مواقع إلكترونية احترافية بتصاميم حديثة وسريعة ومتوافقة مع جميع الأجهزة.</p>
+<div class="btns">
+<a class="w" href="https://wa.me/966502439040">واتساب</a>
+<a class="c" href="tel:+966502439040">اتصال</a>
+<a class="t" href="https://t.me/157008">تيليجرام</a>
+</div>
+</div></section>
+<section id="s"><div class="title">الخدمات</div><div class="grid">
+<div class="card"><h3>تصميم مواقع</h3><p>واجهات احترافية.</p></div>
+<div class="card"><h3>متاجر إلكترونية</h3><p>WooCommerce وLaravel.</p></div>
+<div class="card"><h3>Landing Pages</h3><p>تحويل الزوار إلى عملاء.</p></div>
+<div class="card"><h3>SEO</h3><p>تهيئة لمحركات البحث.</p></div>
+</div></section>
+<section><div class="stats">
+<div class="stat"><div class="num" data-n="120">0</div>مشروع</div>
+<div class="stat"><div class="num" data-n="85">0</div>عميل</div>
+<div class="stat"><div class="num" data-n="99">0</div>% رضا</div>
+</div></section>
+<section id="p"><div class="title">معرض الأعمال</div><div class="grid">
+<div class="card">مشروع شركة</div><div class="card">متجر إلكتروني</div><div class="card">لوحة تحكم</div>
+</div></section>
+
+<section id="c" style="text-align:center">
+    <div class="title">تواصل معي</div>
+
+    <p><b>📞 الهاتف:</b> <a href="tel:+966510068354">+966510068354</a></p>
+
+    <p><b>📧 البريد:</b> <a href="mailto:hi2021233@gmail.com">hi2021233@gmail.com</a></p>
+
+    <p><b>📨 تيليجرام:</b>
+        <a href="https://t.me/hi201233" target="_blank">@hi201233</a>
+    </p>
+
+    <a href="https://t.me/hi201233" target="_blank">
+        <img src="gg2.png" alt="Telegram QR" class="qr">
+    </a>
+
+</section>
+</section>
+</section>
+<footer>© 2026 خالد جمال العيسائي</footer>
+<script>
+const words=["مصمم مواقع احترافية","مطور واجهات حديثة","خبير UI / UX"];let i=0,j=0,d=1,e=document.getElementById("type");
+setInterval(()=>{e.textContent=words[i].slice(0,j);j+=d;if(j>words[i].length){d=-1;setTimeout(()=>{},700)}if(j<0){d=1;i=(i+1)%words.length;j=0}},90);
+let obs=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){let t=+x.target.dataset.n,c=0,s=setInterval(()=>{c++;x.target.textContent=Math.floor(c*t/60);if(c>=60){x.target.textContent=t;clearInterval(s)}},20);obs.unobserve(x.target)}}));
+document.querySelectorAll(".num").forEach(n=>obs.observe(n));
+</script>
+</body></html>
